@@ -2,7 +2,7 @@ node {
     def root = tool name: 'Go 1.18', type: 'go'
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
-        git 'https://github.com/m-dev672/GoExample'
+        git branch: 'main', url: 'https://github.com/m-dev672/GoExample/'
     }
     stage('Build') {
         // Run the maven build
